@@ -1,0 +1,71 @@
+:root {
+    --gutter: 15px;
+    --bg: green;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 20px;
+    margin: 0px;
+}
+body,p,h1,h2,h3,u1,o1 {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: var(--bg);
+}
+.container {
+    background-color: darkkhaki;
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 15px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row > div {
+    padding: 20px;
+    margin: 0 auto;
+    background-color: rgb(43, 150, 199);
+    border: 1px solid black;
+}
+.col-12 {
+    width: calc(100% - var(--gutter));
+}
+.col-1 {
+    width: calc(8.33% - var(--gutter));
+}
+.col-11 {
+    width: calc(91.67% - var(--gutter));
+}
+.col-2 {
+    width: calc(16.66% - var(--gutter));
+}
+.col-10 {
+    width: calc(83.34% - var(--gutter));
+}
+.col-3 {
+    width: calc(25% - var(--gutter));
+}
+.col-9 {
+    width: calc(75% - var(--gutter));
+}
+.col-4 {
+    width: calc(33.33% - var(--gutter));
+}
+.col-8 {
+    width: calc(66.66% - var(--gutter));
+}
+.col-5 {
+    width: calc(41.66% - var(--gutter));
+}
+.col-7 {
+    width: calc(58.34% - var(--gutter));
+}
+.col-6 {
+    width: calc(50% - var(--gutter));
+}
